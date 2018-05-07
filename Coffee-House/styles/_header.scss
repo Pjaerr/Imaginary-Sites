@@ -1,0 +1,15 @@
+
+$textColour:#F5F6FA;
+
+.header
+{
+    display: flex;
+    justify-content: center;
+
+    h1 
+    {
+        color: $textColour;
+        letter-spacing: 8px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "imaginary-coffee-house",
+  "version": "1.0.0",
+  "description": "Site designed and developed for an imaginary coffee house to gain experience.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjaerr/Imaginary-Sites.git"
+  },
+  "author": "Joshua Jackson",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/pjaerr/Imaginary-Sites/issues"
+  },
+  "homepage": "https://github.com/pjaerr/Imaginary-Sites#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.1"
+  }
+}

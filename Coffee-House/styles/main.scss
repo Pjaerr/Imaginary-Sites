@@ -1,0 +1,19 @@
+
+//Import font
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+//Import partial scss files.
+@import 'header';
+
+//Variables
+$backgroundColour:#2F3640;
+$font: 'Lora';
+
+
+body, html
+{
+    height: 100%;
+    margin: 0px;
+    font-family: $font, serif;
+    background: $backgroundColour;
+}

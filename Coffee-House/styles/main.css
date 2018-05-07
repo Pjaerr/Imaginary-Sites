@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header h1 {
+  color: #F5F6FA;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: "Lora", serif;
+  background: #2F3640;
+}
+
+/*# sourceMappingURL=styles/main.css.map */
