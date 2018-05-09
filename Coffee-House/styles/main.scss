@@ -2,13 +2,15 @@
 //Import font
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
-//Import partial scss files.
-@import 'header';
-
 //Variables
+$textColour:#F5F6FA;
 $backgroundColour:#2F3640;
 $font: 'Lora';
 
+//Import partial scss files.
+@import 'header';
+@import 'content';
+@import 'footer';
 
 body, html
 {

@@ -1,0 +1,124 @@
+
+$sectionBackgroundColour: #DCDDE1;
+$sectionTextColour: #2F3640;
+
+/*The collection of sections.*/
+.content
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+%section
+{
+    display: flex;
+    background: $sectionBackgroundColour;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section
+{
+    @extend %section;
+}
+
+.section-reversed
+{
+    @extend %section;
+    flex-direction: row-reverse;
+}
+
+.section-text
+{
+    margin-left: 4px;
+    margin-right: 4px;
+
+    color: $sectionTextColour;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: calc(width * 0.17);
+
+    h1
+    {
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    p
+    {
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 430px)
+{
+  .section-text
+  {
+      font-size: 3.5vw;
+  }
+}
+
+@media (min-width: 700px)
+{
+  .section-text
+  {
+      flex: 1.2;
+
+    h1
+    {
+        letter-spacing: 4px;
+    }
+
+    p
+    {
+        letter-spacing: 2px;
+    }
+  }
+}
+
+@media (min-width: 850px)
+{
+  .section-text
+  {
+      flex: 1.4;
+
+    p
+    {
+        letter-spacing: 3px;
+    }
+  }
+}
+
+@media (min-width: 1250px)
+{
+  .section-text
+  {
+      flex: 1.6;
+  }
+}
+
+@media (min-width: 1500px)
+{
+  .section-text
+  {
+      flex: 2.2;
+  }
+}
+
+.section-image
+{
+    flex: 1;
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+
+        /*Object-fit is not compatible in IE. Works in Edge but only for images.*/
+        object-fit: cover;
+    }
+}

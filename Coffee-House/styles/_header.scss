@@ -1,15 +1,14 @@
 
-$textColour:#F5F6FA;
-
 .header
 {
     display: flex;
     justify-content: center;
-
+    
     h1 
     {
         color: $textColour;
-        letter-spacing: 8px;
+        letter-spacing: 12px;
         text-align: center;
+        font-weight: lighter;
     }
 }
