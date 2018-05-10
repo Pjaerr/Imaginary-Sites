@@ -5,11 +5,16 @@
 }
 .header h1 {
   color: #F5F6FA;
-  letter-spacing: 10px;
+  letter-spacing: 11px;
   text-align: center;
   font-weight: lighter;
 }
 
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+  }
+}
 /*The collection of sections.*/
 .content {
   display: flex;
@@ -29,25 +34,21 @@
   transform: translateX(1000px);
 }
 
-@keyframes slide-in {
-  to {
-    transform: translateX(0);
-  }
-}
 .section-reversed {
   flex-direction: row-reverse;
   transform: translateX(-1000px);
 }
 
 .section-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  /*Ensures text wrapping on IE*/
   width: 100%;
   margin-left: 4px;
   margin-right: 4px;
   color: #2F3640;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -60,6 +61,7 @@
   width: 100%;
 }
 
+/*Default font size to 3.5vw when at iphone 4 width.*/
 @media (max-width: 430px) {
   .section-text {
     font-size: 3.5vw;
@@ -77,6 +79,7 @@
   }
 }
 /*#endregion*/
+/*#region Slowly increase the space that the text in a section takes up.*/
 @media (min-width: 700px) {
   .section-text {
     flex: 1.2;
@@ -106,6 +109,7 @@
     flex: 2.2;
   }
 }
+/*#endregion*/
 .section-image {
   flex: 1;
 }
@@ -156,8 +160,10 @@
   }
 }
 body, html {
+  /*Remove un-needed padding from document.*/
   height: 100%;
   margin: 0px;
+  /*Hide horizontal scrollbar as shows briefly when animating sections in.*/
   overflow-x: hidden;
   font-family: "Lora", serif;
   background: #2F3640;

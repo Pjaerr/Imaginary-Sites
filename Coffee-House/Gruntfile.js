@@ -24,32 +24,12 @@ module.exports = function (grunt)
                         }
                 },
 
-            uglify:
-                {
-                    build:
-                        {
-                            files:
-                                {
-                                    'scripts/main.min.js': ['scripts/main.js']
-                                }
-                        }
-                },
-
             watch:
                 {
                     sass:
                         {
                             files: '**/*.scss',
                             tasks: ['css'],
-                            options:
-                                {
-                                    livereload: true
-                                }
-                        },
-                    uglify:
-                        {
-                            files: 'scripts/main.js',
-                            tasks: ['js'],
                             options:
                                 {
                                     livereload: true
@@ -66,12 +46,9 @@ module.exports = function (grunt)
         });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-concat');
 
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('css', ['sass', 'cssmin']);
-    grunt.registerTask('js', ['uglify']);
 };
