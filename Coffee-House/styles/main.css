@@ -40,6 +40,7 @@
 }
 
 .section-text {
+  width: 100%;
   margin-left: 4px;
   margin-right: 4px;
   color: #2F3640;
@@ -48,14 +49,15 @@
   align-items: center;
   flex: 1;
   text-align: center;
-  font-size: calc(100% * 1.1);
+  letter-spacing: 1px;
 }
 .section-text h1 {
-  letter-spacing: 1px;
-  text-align: center;
+  /*Fix for text wrapping in IE.*/
+  width: 100%;
 }
 .section-text p {
-  letter-spacing: 1px;
+  /*Fix for text wrapping in IE.*/
+  width: 100%;
 }
 
 @media (max-width: 430px) {
