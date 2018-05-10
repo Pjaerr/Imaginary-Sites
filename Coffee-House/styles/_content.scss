@@ -78,6 +78,23 @@ $sectionTextColour: #2F3640;
   }
 }
 
+/*#region 4k Font Size Support*/
+@media (min-width: 2500px)
+{
+  .section-text
+  {
+      font-size: 24px;
+  }
+}
+@media (min-width: 3400px)
+{
+  .section-text
+  {
+      font-size: 32px;
+  }
+}
+/*#endregion*/
+
 @media (min-width: 700px)
 {
   .section-text
