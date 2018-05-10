@@ -5,7 +5,7 @@
 }
 .header h1 {
   color: #F5F6FA;
-  letter-spacing: 12px;
+  letter-spacing: 10px;
   text-align: center;
   font-weight: lighter;
 }
@@ -22,10 +22,21 @@
   background: #DCDDE1;
   justify-content: space-between;
   width: 100%;
+  animation: slide-in 0.8s ease forwards;
 }
 
+.section {
+  transform: translateX(1000px);
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+  }
+}
 .section-reversed {
   flex-direction: row-reverse;
+  transform: translateX(-1000px);
 }
 
 .section-text {
@@ -37,7 +48,7 @@
   align-items: center;
   flex: 1;
   text-align: center;
-  font-size: calc(width * 0.17);
+  font-size: calc(100% * 1.1);
 }
 .section-text h1 {
   letter-spacing: 1px;
@@ -91,6 +102,10 @@
   object-fit: cover;
 }
 
+.important-info {
+  font-weight: bold;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -102,8 +117,8 @@
   margin-top: 4px;
 }
 .footer-links img {
-  max-width: 36px;
-  max-height: 36px;
+  max-width: 32px;
+  max-height: 32px;
 }
 
 .footer-email {
@@ -111,7 +126,7 @@
   text-align: center;
   margin-bottom: 4px;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media (min-width: 850px) {
@@ -129,6 +144,7 @@
 body, html {
   height: 100%;
   margin: 0px;
+  overflow-x: hidden;
   font-family: "Lora", serif;
   background: #2F3640;
 }
