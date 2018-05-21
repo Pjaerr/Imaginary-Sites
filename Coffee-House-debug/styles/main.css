@@ -112,13 +112,12 @@
 /*#endregion*/
 .section-image {
   flex: 1;
-  height: 100%;
 }
 .section-image img {
   width: 100%;
   height: 100%;
   /*Object-fit is not compatible in IE. Works in Edge but only for images.*/
-  object-fit: cover;
+  /*object-fit: cover;*/
 }
 
 .important-info {
