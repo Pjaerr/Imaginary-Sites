@@ -112,6 +112,7 @@
 /*#endregion*/
 .section-image {
   flex: 1;
+  height: auto;
 }
 .section-image img {
   width: 100%;
