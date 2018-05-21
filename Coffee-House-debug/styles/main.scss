@@ -1,0 +1,27 @@
+
+//Import Lora font from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+//Variables
+$textColour:#F5F6FA;
+$backgroundColour:#2F3640;
+$font: 'Lora';
+
+//Import partial scss files.
+@import 'header';
+@import 'content';
+@import 'footer';
+
+body, html
+{
+    /*Remove un-needed padding from document.*/
+    height: 100%;
+    margin: 0px;
+
+    /*Hide horizontal scrollbar as shows briefly when animating sections in.*/
+    overflow-x: hidden;
+
+
+    font-family: $font, serif;
+    background: $backgroundColour;
+}

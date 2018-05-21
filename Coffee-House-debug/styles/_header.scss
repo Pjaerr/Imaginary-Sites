@@ -1,0 +1,13 @@
+.header
+{
+    display: flex;
+    justify-content: center;
+    
+    h1 
+    {
+        color: $textColour;
+        letter-spacing: 11px;
+        text-align: center;
+        font-weight: lighter;
+    }
+}
